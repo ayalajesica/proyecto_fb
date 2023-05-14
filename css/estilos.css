@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+/*reseteo de valores- reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.header{
+    height: 100vh;
+}
+
+.contenedorNav{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(51, 58, 64);
+    padding:1.2rem 5rem;
+    height: 12%;
+    top: 0;
+}
+
+.contenedorLogo{
+    width: 25%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorLogo img{
+    width: 100px;
+    object-fit: cover;
+}
+
+.contenedorLogo h2{
+    color:white;
+}
+
+.navegacion ul{
+    height: 100%;/*la navegacion es el padre*/
+    list-style: none;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.linkNav{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.contenedorConferencia{
+    background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.conferenciaBsAs{
+    padding-right: 5rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.conferenciaBsAs h1{
+    color:white;
+    text-align: right;
+}
+
+.textoConferencia{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;/*negrita*/
+    color:white;
+    text-align: right;
+}
+
+.botonesConferencia{
+    /*padding-right: 1.5rem;*/
+    display:flex;
+    justify-content:flex-end;
+    align-items: left;
+}
+
+.botonesConferencia a{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 2.5rem;
+}
+
+.btnConferenciaOradores{
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.btnConferenciaTickets{
+    background-color: rgb(39, 168, 68);
+    border-color: rgb(39, 168, 68);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.sectionOradores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.sectionOradores h2{
+    margin-top: 10px;
+    font-size:14px;
+    font-weight: 300;
+    height: 10%;
+}
+
+.subtituloOradores{
+    font-size:28px;
+}
+
+.contenedorCards{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    text-align: left;
+    width: 80%;
+    height:90%;
+    margin: 0 auto;
+}
+
+.contenedorCards .card{
+    display: inline-block;
+    background-color:white;
+    width:30%;
+    height: auto;
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.contenedorCards .card img{
+    height: initial;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCards .card .cardBody{
+    margin: 15px;
+    height: 40%;
+    text-align: left;
+}
+
+.botonesTarjeta{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:space-between;
+    margin-right: 19rem;
+}
+
+.javaScript{
+    color: black;
+    background-color: rgb(254, 193, 7);
+    border-radius: 5px;
+    border-width:1px;
+    border-style: none;
+    padding: 4px;
+}
+
+.react{
+    background-color: rgb(23, 162, 185);
+    border-radius: 5px;
+    border-width:1px;
+    border-style: none;
+    padding: 4px;
+}
+
+.negocios{
+    background-color: rgb(109, 118, 123);
+    border-radius: 5px;
+    border-width:1px;
+    border-style: none;
+    padding: 4px;
+
+}
+.startups{
+    background-color: rgb(220, 53, 70);
+    border-radius: 5px;
+    border-width:1px;
+    border-style: none;
+    padding: 4px;
+}
+.cardBody{
+    margin:15px;
+    text-align: center;
+}
+.cardBody p{
+    text-align: justify;
+}
+.card img{
+    width: 100%;
+}
+
+/*.sectionHonolulu{
+    display: flex;
+}*/
+
+.contenedorHonolulu{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    border:1px solid rgb(180, 180, 180);
+}
+
+.fotoHonolulu{
+    background-image: url(/assets/img/honolulu.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-position: center center; /* Centra la imagen de fondo */
+    width: 50%;
+    height: 100%;
+}
+
+.contenedorHonolulu .textoHonolulu{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: left;
+    margin-left: 1px;
+    background-color: rgb(53,58,64);
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+
+}
+
+.tituloHonolulu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.contenedorHonolulu a {
+        color: white;
+        text-decoration: none;
+        border-color: rgb(255, 255, 255);
+        border-width: 1px;
+        border-style:solid;
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: 10px;
+}
+
+.contenedorHonolulu p{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.contenedorFormulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.contenedorFormulario h2 span{
+    font-size: small;
+    font-weight: 300;
+}
+
+.contenedorFormulario h3{
+    font-size: small;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.inputForm{
+    width: 100vh;
+    height: auto; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm input{
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    color: rgb(108, 108, 108);
+}
+
+.inputForm textarea{
+    padding-top: 5px;
+    padding-left: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: rgb(108, 108, 108);
+    resize: none;
+    text-decoration: none;
+}
+
+.contenedorFormulario p{
+    text-align: left;
+    margin-left: 5px;
+    color: rgb(108, 108, 108);
+    font-size: small;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.contenedorFormulario .botonFormulario{
+    background-color: rgb(150,201, 62);
+    border-radius: 5px;
+}
+
+.contenedorFormulario .botonFormulario input{
+    background-color: rgb(150,201, 62);
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+    border: none;
+}
+.contenedorFooter {
+    margin-top: 10px;
+    height:10vh;
+    background-color:rgb(28, 54, 67);
+    align-items: center;
+    text-align: center;
+    display:flex;
+    justify-content:space-between;
+    padding:1.2rem 5rem;
+    top: 0;
+}
+.contenedorFooter a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    align-items: center;
+}
+
+/*medias querys*/
+@media screen and (max-width: 767px) {
+    .contenedorNav{
+        flex-direction:column;    
+        height: initial;
+        justify-content: center;
+        align-items: center;
+        }
+        .navegacion .listaNav {
+            flex-direction: column;
+        }   
+
+        .sectionOradores{
+            height: 100vh;
+            flex-direction:column;    
+            height: initial;
+            justify-content: center;
+            align-items: center;  
+        }
+
+        .contenedorFormulario{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contenedorFooter{
+            flex-direction: column;
+            height: initial;
+            justify-content: center;
+            align-items: center;
+        }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contenedorNav{
+        background-color:red;
+        flex-direction:column;    
+        height: initial;
+        justify-content: center;
+        align-items: center;
+        }
+        .contenedorFooter{
+        flex-direction:column;    
+        height: initial;
+        justify-content: center;
+        align-items: center;
+        }
+
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .contenedorNav{
+        flex-direction:column;    
+        height: initial;
+        justify-content: center;
+        align-items: center;
+        }
+}
